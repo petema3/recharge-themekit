@@ -4,7 +4,6 @@ const program = new Command();
 import list from '../../services/recharge/theme/list.js';
 import inquirer from 'inquirer';
 import zipper from 'zip-local';
-const ui = new inquirer.ui.BottomBar();
 
 const packageTheme = program.command('package')
   .description("Zips your theme directory and places it in the project's root directory.")
@@ -29,6 +28,7 @@ const packageTheme = program.command('package')
         }
       ])
       .then( async (answers) => {
+        const ui = new inquirer.ui.BottomBar();
         ui.log.write(`Zipping theme: "${answers.theme.name}"...`)
         zipper.sync.zip(`${process.cwd()}/theme/`).compress().save("theme.zip");
         ui.log.write(`Done! Zipped "${answers.theme.name}"`);

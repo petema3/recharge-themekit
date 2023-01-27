@@ -3,7 +3,6 @@ const program = new Command();
 
 import inquirer from 'inquirer';
 import list from '../../services/recharge/theme/list.js';
-const ui = new inquirer.ui.BottomBar();
 import publish from '../../services/recharge/theme/publish.js';
 
 const publishCommand = program.command('publish')
@@ -28,6 +27,7 @@ const publishCommand = program.command('publish')
         }
       ])
       .then( async (answers) => {
+        const ui = new inquirer.ui.BottomBar();
         if(answers.theme.active){
           ui.log.write(`"${answers.theme.name}" is already published`)
           process.exit()

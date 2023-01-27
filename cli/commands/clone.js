@@ -5,8 +5,6 @@ import inquirer from 'inquirer'
 import list from '../../services/recharge/theme/list.js'
 import clone from '../../services/recharge/theme/clone.js';
 
-const ui = new inquirer.ui.BottomBar();
-
 const cloneCommand = program.command('clone')
   .description('Duplicates a selected theme.')
   .action(async () => {
@@ -37,6 +35,7 @@ const cloneCommand = program.command('clone')
 
         const { theme, name } = answers
 
+        const ui = new inquirer.ui.BottomBar();
         ui.log.write(`Duplicating theme...`)
         const newTheme = await clone(theme.id, name).then(res => res.data)
         ui.log.write(`Done! Duplicated "${theme.name}" to "${newTheme.theme.name}"`)

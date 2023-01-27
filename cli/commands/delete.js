@@ -3,7 +3,6 @@ const program = new Command();
 
 import inquirer from 'inquirer'
 import list from '../../services/recharge/theme/list.js'
-const ui = new inquirer.ui.BottomBar();
 
 import deleteTheme from '../../services/recharge/theme/delete.js';
 
@@ -29,6 +28,7 @@ const deleteThemeCommand = program.command('delete')
         }
       ])
       .then( async (answers) => {
+        const ui = new inquirer.ui.BottomBar();
         if(answers.theme.active){
           ui.log.write(`"${answers.theme.name}" is the live theme and can not be deleted.`)
           process.exit()
