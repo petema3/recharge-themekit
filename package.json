@@ -4,6 +4,9 @@
   "description": "",
   "main": "cli/index.js",
   "type": "module",
+  "bin": {
+    "rc-theme": "./cli/index.js"
+  },
   "scripts": {
     "rc-theme": "node cli/index.js"
   },
