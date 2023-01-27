@@ -19,7 +19,7 @@ const client = axios.create({
     Origin: RECHARGE_APP_URL,
     Referer: `${RECHARGE_APP_URL}/merchant/theme-editor`,
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:105.0) Gecko/20100101 Firefox/105.0',
-    Cookie: `;session=${process.env.SESSION_TOKEN};`
+    Cookie: `;session=${process.env.RECHARGE_SESSION_TOKEN};`
   },
   withCredentials: true,
 });
