@@ -26,14 +26,14 @@ RECHARGE_SESSION_TOKEN='xxxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
 # Commands
-  auth            Opens a browser tab to the RECHARGE_APP_URL defined in your .env file to retrieve a new session token
-  clone           Duplicates a selected theme.
-  delete          Deletes a selected theme. (Except the published one)
-  new             Create a new theme using the Novum v5 template
-  open            Opens a selected recharge theme in a new tab.
-  package         Zips your theme directory and places it in the project's root directory.
-  publish         Publishes a selected theme.
-  pull            Replaces your local theme files with a selected theme's remote theme files.
-  push            Replaces a selected theme's remote theme files with your local theme files.
-  watch           Watch a directory and upload all file changes to recharge
-  help [command]  display help for command
+  - `auth`            Opens a browser tab to the RECHARGE_APP_URL defined in your .env file to retrieve a new session token
+  - `clone`           Duplicates a selected theme.
+  - `delete`          Deletes a selected theme. (Except the published one)
+  - `new`             Create a new theme using the Novum v5 template
+  - `open`            Opens a selected recharge theme in a new tab.
+  - `package`         Zips your theme directory and places it in the project's root directory.
+  - `publish`         Publishes a selected theme.
+  - `pull`            Replaces your local theme files with a selected theme's remote theme files.
+  - `push`            Replaces a selected theme's remote theme files with your local theme files.
+  - `watch`           Watch a directory and upload all file changes to recharge
+  - `help` [command]  display help for command
