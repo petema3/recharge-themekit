@@ -2,7 +2,7 @@
   "name": "recharge-themekit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cli/index.js",
   "type": "module",
   "scripts": {
     "rc-theme": "node cli/index.js"
