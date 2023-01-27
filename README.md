@@ -37,3 +37,10 @@ RECHARGE_SESSION_TOKEN='xxxxxxxxxxxxxxxxxxxxxxxxx'
   - `push`            Replaces a selected theme's remote theme files with your local theme files.
   - `watch`           Watch a directory and upload all file changes to recharge
   - `help` [command]  display help for command
+
+
+# Command usage
+
+```
+npx rc-theme [command]
+```
