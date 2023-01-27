@@ -13,7 +13,6 @@ import packageTheme from './commands/package.js';
 import publish from './commands/publish.js';
 import pull from './commands/pull.js';
 import push from './commands/push.js';
-import select from './commands/select.js';
 import watch from './commands/watch.js'
 
 
@@ -33,7 +32,6 @@ program.addCommand(packageTheme)
 program.addCommand(publish)
 program.addCommand(pull)
 program.addCommand(push)
-program.addCommand(select)
 program.addCommand(watch)
 
 program.configureHelp()

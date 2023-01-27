@@ -1,8 +1,8 @@
-import client from '../client.js'
+import client from "../../client.js";
 import jsdom from "jsdom";
 const { JSDOM } = jsdom;
 
-async function generateAssetMap(themeId) {
+async function getFiles(themeId) {
   const results = []
   await client.get(`/theme-editor/${themeId}`).then(response => {
     const dom = new JSDOM(response.data);
@@ -24,4 +24,4 @@ async function generateAssetMap(themeId) {
   return results
 }
 
-export default generateAssetMap
+export default getFiles
