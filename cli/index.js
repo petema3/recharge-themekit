@@ -4,7 +4,7 @@ import { Command } from 'commander';
 const program = new Command();
 
 import auth from './commands/auth.js';
-import copy from './commands/copy.js';
+import clone from './commands/clone.js';
 import deleteTheme from './commands/delete.js';
 import docs from './commands/docs.js';
 import newTheme from './commands/new.js'
@@ -24,7 +24,7 @@ program
   .version('0.1.0');
 
 program.addCommand(auth)
-program.addCommand(copy)
+program.addCommand(clone)
 program.addCommand(deleteTheme)
 program.addCommand(docs)
 program.addCommand(newTheme)
