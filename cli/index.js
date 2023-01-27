@@ -6,7 +6,6 @@ const program = new Command();
 import auth from './commands/auth.js';
 import clone from './commands/clone.js';
 import deleteTheme from './commands/delete.js';
-import docs from './commands/docs.js';
 import newTheme from './commands/new.js'
 import open from './commands/open.js'
 import packageTheme from './commands/package.js';
@@ -25,7 +24,6 @@ program
 program.addCommand(auth)
 program.addCommand(clone)
 program.addCommand(deleteTheme)
-program.addCommand(docs)
 program.addCommand(newTheme)
 program.addCommand(open)
 program.addCommand(packageTheme)
