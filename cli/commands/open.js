@@ -31,8 +31,7 @@ const open = program.command('open')
         const ui = new inquirer.ui.BottomBar();
         ui.log.write(`Opening theme: "${answers.theme.name}" in browser! \n\n${answers.theme.preview_url}`)
         await openTheme(answers.theme.preview_url)
-        process.exit()
-      })
+      }).then(() => process.exit())
   })
 
 export default open

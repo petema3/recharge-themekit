@@ -20,7 +20,7 @@ const createNewTheme = program.command('new')
         ui.log.write(`Creating a new theme named: "${answers.name}"...`)
         await newTheme(answers.name)
         ui.log.write(`Done! "${answers.name}" has been created.`)
-      })
+      }).then(() => process.exit())
   })
 
 

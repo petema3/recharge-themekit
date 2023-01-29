@@ -52,7 +52,10 @@ const push = program.command('push')
           }
         }
 
-      }).then(() => {process.exit()})
+        ui.log.write(`Done! Push from "${answers.theme.name}" is complete`)
+        ui.updateBottomBar("")
+
+      }).then(() => process.exit())
   });
 
 export default push

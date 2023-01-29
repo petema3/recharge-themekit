@@ -37,7 +37,7 @@ const deleteThemeCommand = program.command('delete')
         ui.log.write(`Deleting "${answers.theme.name}"...`)
         await deleteTheme(answers.theme.id)
         ui.log.write(`Done! "${answers.theme.name}" has been deleted.`)
-      })
+      }).then(() => process.exit())
   });
 
 export default deleteThemeCommand

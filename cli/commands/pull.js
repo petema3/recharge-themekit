@@ -59,7 +59,8 @@ const pull = program.command('pull')
 
         }
 
-        ui.log.write(`pull from "${answers.theme.name}" is complete`)
+        ui.log.write(`Done! Pull from "${answers.theme.name}" is complete`)
+        ui.updateBottomBar("")
 
       }).then(() => process.exit())
   });
