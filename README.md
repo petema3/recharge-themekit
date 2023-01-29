@@ -16,7 +16,7 @@ npm install https://github.com/Michael-Gibbons/recharge-themekit.git
 
 # Environment variables
 
-This cli requires 2 environment variables. RECHARGE_APP_URL, which is just the url you go to when going to the recharge app from your platform's admin. And RECHARGE_SESSION_TOKEN which is manually retrieved from the `session` cookie while on the `RECHARGE_APP_URL`.
+This cli requires 2 environment variables inside your `.env` file. RECHARGE_APP_URL, which is just the url you go to when going to the recharge app from your platform's admin. And RECHARGE_SESSION_TOKEN which is manually retrieved from the `session` cookie while on the `RECHARGE_APP_URL`.
 
 The `session` cookie is inaccessible from javascript since it is a http only cookie. So you just need to copy it manually from your browser.
 
