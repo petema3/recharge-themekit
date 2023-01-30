@@ -32,6 +32,7 @@ const open = program.command('open')
         ui.log.write(`Opening theme: "${answers.theme.name}" in browser! \n\n${answers.theme.preview_url}`)
         await openTheme(answers.theme.preview_url)
       }).then(() => process.exit())
+      .catch(err => console.log(err))
   })
 
 export default open

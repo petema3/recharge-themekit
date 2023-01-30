@@ -34,6 +34,7 @@ const packageTheme = program.command('package')
         ui.log.write(`Done! Zipped "${answers.theme.name}"`);
 
       }).then(() => process.exit())
+      .catch(err => console.log(err))
   });
 
 export default packageTheme

@@ -63,6 +63,7 @@ const pull = program.command('pull')
         ui.updateBottomBar("")
 
       }).then(() => process.exit())
+      .catch(err => console.log(err))
   });
 
 export default pull

@@ -87,6 +87,7 @@ const watch = program.command('watch')
           .on('unlink', filePath => handleRemovedFile(filePath, watchedTheme))
           .on('ready', () => handleReady(watchedTheme));
       })
+      .catch(err => console.log(err))
   });
 
 export default watch

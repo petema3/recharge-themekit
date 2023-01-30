@@ -56,6 +56,7 @@ const push = program.command('push')
         ui.updateBottomBar("")
 
       }).then(() => process.exit())
+      .catch(err => console.log(err))
   });
 
 export default push

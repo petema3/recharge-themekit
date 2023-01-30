@@ -40,6 +40,7 @@ const cloneCommand = program.command('clone')
         const newTheme = await clone(theme.id, name).then(res => res.data)
         ui.log.write(`Done! Duplicated "${theme.name}" to "${newTheme.theme.name}"`)
       }).then(() => process.exit())
+      .catch(err => console.log(err))
   });
 
 export default cloneCommand

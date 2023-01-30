@@ -37,6 +37,7 @@ const publishCommand = program.command('publish')
         await publish(answers.theme.id)
         ui.log.write(`Done! Published theme "${answers.theme.name}"`)
       }).then(() => process.exit())
+      .catch(err => console.log(err))
   });
 
 export default publishCommand

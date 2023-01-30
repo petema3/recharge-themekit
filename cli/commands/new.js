@@ -21,6 +21,7 @@ const createNewTheme = program.command('new')
         await newTheme(answers.name)
         ui.log.write(`Done! "${answers.name}" has been created.`)
       }).then(() => process.exit())
+      .catch(err => console.log(err))
   })
 
 
