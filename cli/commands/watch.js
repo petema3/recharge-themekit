@@ -85,7 +85,8 @@ const watch = program.command('watch')
           .on('add', filePath => handleAddedFile(filePath, watchedTheme))
           .on('change', filePath => handleChangedFile(filePath, watchedTheme))
           .on('unlink', filePath => handleRemovedFile(filePath, watchedTheme))
-          .on('ready', () => handleReady(watchedTheme));
+          .on('ready', () => handleReady(watchedTheme))
+          .on('error', error => log(`Watcher error: ${error}`));
       })
       .catch(err => console.log(err))
   });
